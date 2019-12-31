@@ -2,35 +2,38 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+// Icons
+import { Icon } from 'react-icons-kit';
+import { caretDown, home } from 'react-icons-kit/fa';
+
 import "../assets/styles/main.scss"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <nav className="navbar scrolled">
+    <div className="container">
+      <a>K&D Electric Company</a>
+      <ul>
+        <li><a style={{padding: "30px 14px"}}><Icon size={26} icon={home}></Icon></a></li>
+        <li>
+          <a>Services <Icon size={15} icon={caretDown}></Icon></a>
+          <ul className="dropdown-menu">
+            <li><a>Commercial Electrical Wiring</a></li>
+            <li><a>Commercial Electrician</a></li>
+            <li><a>Commercial Exterior Lighting</a></li>
+            <li><a>General Electrician</a></li>
+            <li><a>Home Electrical Wiring</a></li>
+            <li><a>Home Electrician</a></li>
+            <li><a>Home Exterior Lighting</a></li>
+            <li><a>Recessed Lighting Installation</a></li>
+            <li><a>Electrical Wiring</a></li>
+            <li><a>Circuit Breaker Replacement</a></li>
+          </ul>
+        </li>
+        <li><a>About Us</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 )
 
 Header.propTypes = {
