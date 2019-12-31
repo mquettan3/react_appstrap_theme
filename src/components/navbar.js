@@ -11,7 +11,7 @@ import "../assets/styles/main.scss"
 const Header = () => (
   <nav className="navbar scrolled">
     <div className="container">
-      <a>K&D Electric Company</a>
+      <a className="title"><h1>K&D Electric Company</h1><div className="divider"></div><span className="subtitle">703-335-0654</span></a>
       <ul>
         <li><a style={{padding: "30px 14px"}}><Icon size={26} icon={home}></Icon></a></li>
         <li>

@@ -15,6 +15,36 @@
         justify-content: space-between;
         margin: 0 auto;
     }
+
+    .title {
+        position: relative;
+        display: flex;
+        height: 100%;
+
+        .divider {
+            height: 40px;
+            width: 1px;
+            background-color: rgb(205, 205, 205);
+            margin: auto 10px;
+        }
+
+        h1 {
+            margin: 0px;
+            font-size: 34.4px;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            font-family: "Rambla", "sans-serif";
+            margin: auto auto;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Open Sans", Arial, serif;
+            margin: auto auto;
+        }
+    }
+
     ul {
         display: flex;
         justify-content: space-between;
