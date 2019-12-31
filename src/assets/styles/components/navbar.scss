@@ -124,6 +124,11 @@
             }
         }
 
+        .dropdown-menu.show {
+            display: flex;
+            flex-direction: column;
+        }
+
         li:hover {
 
             .dropdown-menu {
