@@ -1,5 +1,7 @@
 // import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useState } from "react";
+
+import useEventListener from "../hooks/eventListener";
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -10,9 +12,20 @@ import "../assets/styles/main.scss"
 export default function Header() {
   const [isMenuIconClicked, setMenuIconClicked] = useState(false);
   const [isServicesClicked, setServicesClicked] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = (e) => {
+    if (e.currentTarget.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }
+
+  useEventListener("scroll", handleScroll);
 
   return (
-    <nav className="navbar scrolled">
+    <nav className={"navbar " + (isScrolled ? "scrolled" : "")}>
       <div className="container">
         <div className="title"><a href="#"><h1>K&D Electric Company</h1></a><div className="divider"></div><span className="subtitle">703-335-0654</span></div>
         <div>
