@@ -13,7 +13,7 @@ export default function TypedText( { textValues }) {
            } else {
                setWritingLength(writingLength + 1);
            }
-       }, 100);
+       }, 75);
        return () => clearInterval(interval);
    }, [writingIndex, writingLength]);
 
@@ -25,12 +25,12 @@ export default function TypedText( { textValues }) {
            } else {   
                setWritingIndex(writingIndex + 1);
            }
-       }, 5000);
+       }, 3000);
        return () => clearInterval(interval);
    });
     return (
         <div className="writing-text">
-            <p>{writingText}</p><span className="pulsing-cursor"></span>
+            <h3>{writingText}</h3><span className="pulsing-cursor"></span>
         </div>
     )
 }

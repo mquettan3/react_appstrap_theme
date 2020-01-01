@@ -15,6 +15,22 @@
         text-decoration: none;
     }
 
+    .location-title {
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+
+        i {
+            margin-right: 3px;
+            line-height: 25px;
+        }
+
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+
     .container {
         width: 90%;
         display: flex;

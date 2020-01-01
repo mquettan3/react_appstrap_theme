@@ -5,7 +5,7 @@ import useEventListener from "../hooks/eventListener";
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import { caretDown, home, bars } from 'react-icons-kit/fa';
+import { caretDown, home, bars, mapMarker } from 'react-icons-kit/fa';
 
 import "../assets/styles/main.scss"
 
@@ -28,6 +28,7 @@ export default function Header() {
     <nav className={"navbar " + (isScrolled ? "scrolled" : "")}>
       <div className="container">
         <div className="title"><a href="#"><h1>K&D Electric Company</h1></a><div className="divider"></div><span className="subtitle">703-335-0654</span></div>
+        <a className="location-title" href="#"><Icon size={30} icon={mapMarker}></Icon><h2>Bristow, Virginia</h2></a>
         <div>
           <a role="button" tabIndex="0" className="nav-menu-icon" onClick={() => setMenuIconClicked(!isMenuIconClicked)} onKeyPress={() => setMenuIconClicked(!isMenuIconClicked)}><Icon size={26} icon={bars}></Icon></a>
           <ul className={"nav-menu " + (isMenuIconClicked ? "show" : "")}>

@@ -2,17 +2,26 @@
     display: flex;
     justify-content: center;
 
+    h3 {
+        font-family: "Open Sans", Arial, serif;
+        color: rgb(233, 236, 239);
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
     .pulsing-cursor {
         display: inline-block;
         background-color: white;
         width: 2px;
-        height: 26px;
+        height: 30px;
         margin-left: 3px;
         -webkit-animation: 1s blink ease-in-out infinite;
         -moz-animation: 1s blink ease-in-out infinite;
         -ms-animation: 1s blink ease-in-out infinite;
         -o-animation: 1s blink ease-in-out infinite;
         animation: 1s blink ease-in-out infinite;
+        margin-bottom: 30px;
     }
 
     @keyframes blink {
