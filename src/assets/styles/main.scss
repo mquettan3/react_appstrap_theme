@@ -30,3 +30,14 @@
 
 // Global Custom styles
 @import "global/global";
+
+iframe {
+    width: 100%;
+}
+
+iframe:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+}
