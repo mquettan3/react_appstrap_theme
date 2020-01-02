@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    small {
+        display: block;
+        color: rgb(219, 33, 33);
+    }
+
     .overlay {
         position: absolute;
         top: 40%;

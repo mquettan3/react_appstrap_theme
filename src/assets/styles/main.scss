@@ -15,8 +15,8 @@
 @import "components/writing-text";
 // Navbar
 @import "components/navbar";
-// // Mazel_Features Section
-// @import "components/portfolio";
+// Services Section
+@import "components/services";
 // // Contact Me Section
 // @import "components/contact";
 // // Site Preloader
@@ -25,19 +25,18 @@
 // @import "components/aboutme";
 // // Error Page Section
 // @import "components/errorpage";
-// // Copyright Section
-// @import "components/copyright";
+// Copyright Section
+@import "components/copyright";
 
 // Global Custom styles
 @import "global/global";
 
 iframe {
     width: 100%;
+    margin-bottom: 0px !important;
 }
 
-iframe:before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+.container {
+    width: 90%;
+    margin: 0 auto;
 }

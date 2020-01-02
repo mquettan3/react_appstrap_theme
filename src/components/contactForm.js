@@ -100,7 +100,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div>
+        <section className="contact-us">
             <form id="contact" className="row contact-form">
                 <div className="col-md-6">
                     <div className="form-field-wrapper">
@@ -138,6 +138,6 @@ export default function ContactForm() {
                     <Icon className="left" icon={exclamationCircle} style={{color: "#e1534f"}}></Icon>There was an error sending your email.  Please validate that you have provided a valid email.  If this problem persists, please email me directly at mquettan@gmail.com!
                 </h5>}
             </div>
-        </div>
+        </section>
     )
 }
