@@ -1,0 +1,54 @@
+.mq-button-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+    font-size: 14px;
+    line-height: 1.35;
+    border-width: 1px;
+    border-style: solid;
+    letter-spacing: .5px;
+    border-radius: 2px;
+    padding: 16px 24px;
+    font-family: "Open Sans", Arial, serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mq-button-dark:active:focus {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125), 0 0 0 0.2rem rgba(82, 88, 93, .5);
+}
+
+.mq-button-dark:active, .mq-button-dark:focus {
+    color: #fff;
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+.mq-button-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+input, textarea {
+    padding: 6px 12px;
+    border-color: rgb(206, 212, 218);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, serif;
+    color: $text-color;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input:hover, textarea:hover {
+    border-color: #E6E6E6;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: $accent-color;
+}

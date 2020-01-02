@@ -21,7 +21,7 @@ export default function contactUs() {
                     <h3>Business Hours</h3>
                     <table>
                         <tr>
-                            <th>Day</th>
+                            <th><h4>Day</h4></th>
                             <th>Hours</th>
                         </tr>
                         <tr>

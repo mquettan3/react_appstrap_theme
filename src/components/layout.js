@@ -14,7 +14,7 @@ import Banner from "./banner"
 import Services from "./services"
 import AboutUs from "./aboutus"
 import ContactUs from "./contactUs"
-import "./layout.css"
+// import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

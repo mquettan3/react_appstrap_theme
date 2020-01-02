@@ -8,6 +8,7 @@
         justify-content: space-evenly;
 
         h3 {
+            color: $text-color;
             font-weight: 700;
             font-size: 20px;
             margin-bottom: 20px;
@@ -30,6 +31,32 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+.contact-form {
+    .form-field-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom: 5px;
+    }
+    small {
+        margin-bottom: 10px;
+        color: $error-text-color;
+    }
+
+    .successContent {
+        i {
+            color: $success-text-color;
+        }
+    }
+
+    .errorContent {
+        i {
+            color: $error-text-color;
         }
     }
 }

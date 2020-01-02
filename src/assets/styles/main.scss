@@ -8,6 +8,10 @@
 // @import url("https://fonts.googleapis.com/css?family=Cantarell:700"); //Unused, kept because cool font.
 // Variables, Mixins
 @import "global/variables";
+// Typography
+@import "global/typography";
+// Personal Framework
+@import "global/framework";
 
 // Component Specific Customs
 // Banner
@@ -41,6 +45,6 @@ iframe {
 .section-divider {
     width: 111px;
     height: 3px;
-    background-color: rgb(65, 167, 154);
+    background-color: $accent-color;
     margin-bottom: 8px;
 }

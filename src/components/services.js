@@ -11,8 +11,8 @@ export default function Services() {
             <div className="container">
                 <div className="header">
                     <div className="section-divider"></div>
-                    <h1>Services</h1>
-                    <h2>There is only one local team to turn to when you need high-quality!</h2>
+                    <h2>Services</h2>
+                    <p>There is only one local team to turn to when you need high-quality!</p>
                 </div>
             </div>
         </section>

@@ -30,7 +30,7 @@ export default function TypedText( { textValues }) {
    });
     return (
         <div className="writing-text">
-            <h3>{writingText}</h3><span className="pulsing-cursor"></span>
+            <h2>{writingText}</h2><span className="pulsing-cursor"></span>
         </div>
     )
 }

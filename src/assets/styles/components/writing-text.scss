@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
 
-    h3 {
+    h2 {
         font-family: "Open Sans", Arial, serif;
-        color: rgb(233, 236, 239);
+        color: $faded-white-text;
         font-size: 28px;
         font-weight: 400;
         margin-bottom: 30px;
+        text-transform: none;
     }
 
     .pulsing-cursor {
