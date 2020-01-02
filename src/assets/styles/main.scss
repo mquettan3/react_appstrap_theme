@@ -12,19 +12,16 @@
 // Component Specific Customs
 // Banner
 @import "components/banner";
+// Animated Text
 @import "components/writing-text";
 // Navbar
 @import "components/navbar";
 // Services Section
 @import "components/services";
-// // Contact Me Section
-// @import "components/contact";
-// // Site Preloader
-// @import "components/preloader";
-// // About Me Section
-// @import "components/aboutme";
-// // Error Page Section
-// @import "components/errorpage";
+// About Us Section
+@import "components/aboutus";
+// Error Page Section
+@import "components/contactus";
 // Copyright Section
 @import "components/copyright";
 
@@ -39,4 +36,11 @@ iframe {
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.section-divider {
+    width: 111px;
+    height: 3px;
+    background-color: rgb(65, 167, 154);
+    margin-bottom: 8px;
 }

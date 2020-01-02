@@ -10,7 +10,7 @@ export default function Services() {
         <section className="services">
             <div className="container">
                 <div className="header">
-                    <div className="section-divder"></div>
+                    <div className="section-divider"></div>
                     <h1>Services</h1>
                     <h2>There is only one local team to turn to when you need high-quality!</h2>
                 </div>

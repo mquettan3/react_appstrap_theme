@@ -1,0 +1,35 @@
+.contactus {
+    font-family: "Open Sans", Arial, serif;
+    color: rgb(73, 80, 87);
+    padding: 74px 24px;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            max-width: 400px;
+            i {
+                margin-right: 5px;
+            }
+
+            .section-divider {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
