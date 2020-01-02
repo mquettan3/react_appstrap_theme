@@ -1,0 +1,7 @@
+Fix how it looks on mobile
+style the form
+add function to the form
+add navbar animations
+Add new page for each service
+Add phone as input to form
+
