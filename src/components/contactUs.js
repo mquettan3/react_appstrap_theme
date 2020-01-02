@@ -22,7 +22,7 @@ export default function contactUs() {
                     <table>
                         <tr>
                             <th><h4>Day</h4></th>
-                            <th>Hours</th>
+                            <th><h4>Hours</h4></th>
                         </tr>
                         <tr>
                             <td>Monday</td>
