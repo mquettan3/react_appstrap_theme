@@ -7,7 +7,7 @@ import { building, home, wrench, dollar } from 'react-icons-kit/fa';
 export default function Services() {
     return (
         <>
-        <section className="services">
+        <section id="services" className="services">
             <div className="container">
                 <div className="header">
                     <div className="section-divider"></div>
@@ -23,7 +23,7 @@ export default function Services() {
                     <div className="item">
                         <Icon size={48} icon={building}></Icon>
                         <h3>Commercial</h3>
-                        <p>So whether you need an entire building rewired or are simply looking to update your current setup, K & D Electric Company LLC is at your service. Call today!</p>
+                        <p>Whether you need an entire building rewired or are simply looking to update your current setup, K & D Electric Company LLC is at your service. Call today!</p>
                     </div>
                 </div>
                 <div className="item-wrapper">

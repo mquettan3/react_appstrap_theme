@@ -46,7 +46,7 @@ export default function Header( { isMenuIconClicked, setMenuIconClicked, handleN
           <ul className={"nav-menu " + (isMenuIconClicked ? "show" : "")}>
             <li><a href="#home" onClick={handleNavMenuItemClick}><Icon size={26} icon={home}></Icon></a></li>
             <li>
-              <a role="button" tabIndex="0" onClick={() => setServicesClicked(!isServicesClicked)} onKeyPress={() => setServicesClicked(!isServicesClicked)}>Services <Icon size={15} icon={caretDown}></Icon></a>
+              {/* <a role="button" tabIndex="0" onClick={() => setServicesClicked(!isServicesClicked)} onKeyPress={() => setServicesClicked(!isServicesClicked)}>Services <Icon size={15} icon={caretDown}></Icon></a>
               <ul className={"dropdown-menu " + ((isServicesClicked && isMenuIconClicked) ? "show" : "")}>
                 <li><a href="#">Commercial Electrical Wiring</a></li>
                 <li><a href="#">Commercial Electrician</a></li>
@@ -58,7 +58,8 @@ export default function Header( { isMenuIconClicked, setMenuIconClicked, handleN
                 <li><a href="#">Recessed Lighting Installation</a></li>
                 <li><a href="#">Electrical Wiring</a></li>
                 <li><a href="#">Circuit Breaker Replacement</a></li>
-              </ul>
+              </ul> */}
+              <a href="#services" onClick={handleNavMenuItemClick}>Services</a>
             </li>
             <li><a href="#aboutus" onClick={handleNavMenuItemClick}>About Us</a></li>
             <li><a href="#contactus" onClick={handleNavMenuItemClick}>Contact Us</a></li>
