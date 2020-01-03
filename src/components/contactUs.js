@@ -7,7 +7,7 @@ import { phone, envelope, mapMarker } from 'react-icons-kit/fa';
 
 export default function contactUs() {
     return (
-        <div className="contactus">
+        <section className="contactus">
             <div className="container">
                 <div className="info">
                     <h3>Contact Us</h3>
@@ -59,6 +59,6 @@ export default function contactUs() {
                     <ContactForm />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

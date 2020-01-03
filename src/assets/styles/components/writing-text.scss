@@ -9,20 +9,28 @@
         font-weight: 400;
         margin-bottom: 30px;
         text-transform: none;
+
+        @media (max-width: 408px) {
+            font-size: 20px;
+        }
     }
 
     .pulsing-cursor {
         display: inline-block;
         background-color: white;
         width: 2px;
-        height: 38px;
+        height: 32px;
         margin-left: 3px;
         -webkit-animation: 1s blink ease-in-out infinite;
         -moz-animation: 1s blink ease-in-out infinite;
         -ms-animation: 1s blink ease-in-out infinite;
         -o-animation: 1s blink ease-in-out infinite;
         animation: 1s blink ease-in-out infinite;
-        margin-bottom: 30px;
+        margin-bottom: -5px;
+
+        @media (max-width: 408px) {
+            height: 26px;
+        }
     }
 
     @keyframes blink {

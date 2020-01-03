@@ -22,6 +22,10 @@
         margin-bottom: auto;
         display: flex;
 
+        @media (max-width: 970px) {
+            display: none;
+        }
+
         i {
             margin-right: 3px;
             line-height: 25px;
@@ -54,6 +58,10 @@
             width: 1px;
             background-color: rgb(205, 205, 205);
             margin: auto 10px;
+
+            @media (max-width: 596px) {
+                display: none;
+            }
         }
 
         h1 {
@@ -64,6 +72,10 @@
             font-family: "Rambla", "sans-serif";
             margin: 26.5px auto;
             color: white;
+
+            @media (max-width: 596px) {
+                display: none;
+            }
         }
 
         .subtitle {
@@ -72,12 +84,23 @@
             font-family: "Open Sans", Arial, serif;
             margin: auto auto;
             color: $faded-white-text;
+
+            @media (max-width: 596px) {
+                margin: 0px;
+                font-size: 34.4px;
+                letter-spacing: -0.5px;
+                font-weight: 700;
+                font-family: "Rambla", "sans-serif";
+                margin: 26.5px auto;
+                color: white;
+            }
         }
     }
 
     ul {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0;
         li {
             list-style: none;
@@ -181,7 +204,7 @@
 
     
 
-@media (max-width: 1024px) {
+@media (max-width: 1450px) {
 
     .nav-menu-icon {
         display: block;
@@ -197,11 +220,14 @@
     .nav-menu.show {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         position: absolute;
         top: 91px;
         right: 0px;
         background-color: black;
         width: 320px;
+        max-height: calc(100vh - 91px);
+        overflow-y: scroll;
 
         li {
             border-bottom-style: none;

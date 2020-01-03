@@ -7,19 +7,33 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        flex: 0 0 42%;
+        flex: 1 1 42%;
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 
     .content {
-        flex: 1 1 58%;
+        flex: 2 2 58%;
         color: white;
         padding-left: 96px;
         padding-right: 96px;
+
+        @media (max-width: 800px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         h1 {
             font-size: 56px;
             font-weight: 300;
 
+            @media (min-width: 1104px) and (max-width: 1246px) {
+                font-size: 48px;
+            }
+            @media (max-width: 1103px) {
+                font-size: 32px;
+            }
             b {
                 color: $accent-color;
             }
