@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BackgroundImage from "../assets/images/computer-screens.jpg";
+import BackgroundImage from "../assets/images/multimeter.jpg";
 
 export default function AboutUs() {
     return (

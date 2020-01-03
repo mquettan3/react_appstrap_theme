@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import BackgroundImage from "../assets/images/index-corporate-banner.jpg";
+import BackgroundImage from "../assets/images/electrician.jpg";
 import TypedText from "./typedText";
 
 export default function Banner() {
