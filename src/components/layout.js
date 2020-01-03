@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       document.querySelector(".loader").ontransitionend = () => {
         document.querySelector(".loader").classList.remove("show");
       }
-    }, 1000);
+    }, 750);
 
     return () => clearTimeout(loaderDelay);
   }, []);
