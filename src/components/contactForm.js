@@ -11,6 +11,7 @@ export default function ContactForm() {
     const [name, setName] = useState({isValid: false, value: ""});
     const [email, setEmail] = useState({isValid: false, value: ""});
     const [subject, setSubject] = useState({isValid: false, value: ""});
+    const [phone, setPhone] = useState({isValid: false, value: ""});
     const [content, setContent] = useState({isValid: false, value: ""});
     const [hasSubmitted, setHasSubmitted] = useState(false);
 
@@ -26,7 +27,7 @@ export default function ContactForm() {
 
     const handleFormUpdate = (e) => {
         let valid = false;
-        switch(e.currentTarget.id) {
+        switch(e.currentTarget.name) {
             case "form-name":
                 if (e.currentTarget.value.length > 0) {
                     valid = true;
@@ -44,6 +45,11 @@ export default function ContactForm() {
                     valid = true;
                 }
                 setSubject({isValid: valid, value: e.currentTarget.value});
+                break;
+            case "form-phone":
+                // Always valid because not required.
+                valid = true;
+                setPhone({isValid: valid, value: e.currentTarget.value});
                 break;
             case "form-message": 
                 if (e.currentTarget.value.length > 0) {
@@ -79,6 +85,7 @@ export default function ContactForm() {
                     name: name,
                     email: email,
                     subject: subject,
+                    phone: phone,
                     content: content
                 }).then(function (response) {
                     // handle success   
@@ -115,10 +122,10 @@ export default function ContactForm() {
                     {((!subject.isValid) && hasSubmitted) && <small>Please provide a subject for your message!</small>}
                 </div>
                 <div className="form-field-wrapper">
-                    <input type="text" name="form-subject" placeholder="Phone Number (Optional)" value={subject.value} onChange={handleFormUpdate} />
+                    <input type="text" name="form-phone" placeholder="Phone Number (Optional)" value={phone.value} onChange={handleFormUpdate} />
                 </div>
                 <div className="form-field-wrapper">
-                    <textarea id="form-message" rows="7" name="form-message" placeholder="Your Message" required value={content.value} onChange={handleFormUpdate}></textarea>
+                    <textarea rows="7" name="form-message" placeholder="Your Message" required value={content.value} onChange={handleFormUpdate}></textarea>
                     {((!content.isValid) && hasSubmitted) && <small>Please provide some content for your message!</small>}
                 </div>
                 <button className="mq-button-dark" type="submit" id="form-submit" name="submit" onClick={handleFormSubmit} disabled={componentState === componentStates.LOADING}>Submit</button>

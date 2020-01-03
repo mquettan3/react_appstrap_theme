@@ -49,7 +49,7 @@ exports.handler = async (event) => {
     from: FROM_EMAIL_ADDRESS,
     to: CONTACT_TO_EMAIL_ADDRESS,
     'h:Reply-To': body.email,
-    subject: `${body.name} sent you a message from marcusquettan.com : ${body.subject}`,
+    subject: `${body.name}: Phone Number ${body.phone} : sent you a message from kanddelectric.com : ${body.subject}`,
     text: body.content
   }
 
