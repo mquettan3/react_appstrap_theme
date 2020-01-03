@@ -40,29 +40,49 @@
 
     .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
-        .item {
-            padding: 0px 15px; 
-            max-width: 400px;
-            h3 {
-                color: $text-color;
-                font-size: 24px;
-                font-weight: 700;
-                font-family: "Open Sans", Arial, serif;
-                margin: 8px 0px;
+        .item-wrapper {
+            @media (min-width: 927px) and (max-width: 1825px) {
+                flex-basis: 50%;
+                flex-grow: 1;
             }
 
-            p {
-                color: $text-color;
-                font-size: 16px;
-                font-weight: 400;
-                font-family: "Open Sans", Arial, serif;
-                margin: 0px;
+            @media (max-width: 926px) {
+                flex-basis: 100%;
+                flex-grow: 1;
+                align-items: center;
             }
 
-            i {
-                color: $accent-color;
+            .item {
+                padding: 15px 15px; 
+                max-width: 370px;
+
+                @media (max-width: 1825px) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+    
+                h3 {
+                    color: $text-color;
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: "Open Sans", Arial, serif;
+                    margin: 8px 0px;
+                }
+    
+                p {
+                    color: $text-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Open Sans", Arial, serif;
+                    margin: 0px;
+                }
+    
+                i {
+                    color: $accent-color;
+                }
             }
         }
     }
