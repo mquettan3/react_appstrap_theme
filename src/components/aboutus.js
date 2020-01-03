@@ -4,13 +4,13 @@ import BackgroundImage from "../assets/images/computer-screens.jpg";
 
 export default function AboutUs() {
     return (
-        <section className="aboutus">
+        <section id="aboutus" className="aboutus">
             <div className="side-image" style={{backgroundImage: "url(" + BackgroundImage + ")"}}></div>
             <div className="content">
                 <div className="section-divider"></div>
                 <h1>Why Choose <b>K&D Electric Company?</b></h1>
                 <h3>Quick and Reliable</h3>
-                <p>It can be difficult to find a punctual, professional Bristow, VA, electrical contractor these days, and K & D Electric Company LLC is your best option if you need someone to come to your house or place of business to help with your electrical maintenance or repair needs. With more than 20 years of experience, there is no electrical problem that we have not seen <b>and solved.</b></p>
+                <p>It can be difficult to find a punctual, professional Bristow, VA, electrical contractor these days, and K & D Electric Company LLC is your best option if you need someone to come to your house or place of business to help with your electrical maintenance or repair needs. With more than 20 years of experience, there is no electrical problem that we have not seen and solved.</p>
                 {/* <h3>Locally Owned & Operated</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero tempor elit tincidunt sollicitudin id et dolor. Proin iaculis, dui ac facilisis malesuada, magna nisi commodo odio, in pretium metus dui quis nulla. Cras imperdiet ipsum non massa fermentum cursus. Cras blandit pharetra dui a vulputate.</p> */}
                 <h3>Over 20 Years of Professional Experience</h3>

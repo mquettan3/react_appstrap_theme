@@ -6,7 +6,7 @@ import TypedText from "./typedText";
 export default function Banner() {
 
     return (
-        <section className="banner" style={{backgroundImage: "url(" + BackgroundImage  + ")"}}>
+        <section id="home" className="banner" style={{backgroundImage: "url(" + BackgroundImage  + ")"}}>
             <div className="overlay">
                 <h1 className="desktop-title">Experienced Local Electricians</h1>
                 <h1 className="mobile-title">K&D Electric Company</h1>
