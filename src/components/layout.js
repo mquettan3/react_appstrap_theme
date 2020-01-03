@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,6 +26,17 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  useEffect(() => {
+    const loaderDelay = setTimeout(() => {
+      document.querySelector(".loader").classList.add("animate");
+      document.querySelector(".loader").ontransitionend = () => {
+        document.querySelector(".loader").classList.remove("show");
+      }
+    }, 1000);
+
+    return () => clearTimeout(loaderDelay);
+  }, []);
 
   return (
     <>

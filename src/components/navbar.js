@@ -22,7 +22,14 @@ export default function Header() {
     }
   }
 
+  const handleResize = (e) => {
+    if((window.innerWidth > 1450) && isMenuIconClicked) {
+      setMenuIconClicked(false);
+    }
+  }
+
   useEventListener("scroll", handleScroll);
+  useEventListener("resize", handleResize);
 
   return (
     <nav className={"navbar " + (isScrolled ? "scrolled" : "")}>
@@ -35,7 +42,7 @@ export default function Header() {
             <li><a href="#"><Icon size={26} icon={home}></Icon></a></li>
             <li>
               <a role="button" tabIndex="0" onClick={() => setServicesClicked(!isServicesClicked)} onKeyPress={() => setServicesClicked(!isServicesClicked)}>Services <Icon size={15} icon={caretDown}></Icon></a>
-              <ul className={"dropdown-menu " + (isServicesClicked ? "show" : "")}>
+              <ul className={"dropdown-menu " + ((isServicesClicked && isMenuIconClicked) ? "show" : "")}>
                 <li><a href="#">Commercial Electrical Wiring</a></li>
                 <li><a href="#">Commercial Electrician</a></li>
                 <li><a href="#">Commercial Exterior Lighting</a></li>
