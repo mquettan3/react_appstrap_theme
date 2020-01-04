@@ -54,14 +54,18 @@
             }
         }
 
-        button.mobile {
+        a {
+            text-decoration: none;
+        }
+
+        a.mobile {
             display: none;
             @media (max-width: 404px) {
                 display: inline-block;
             }
         }
 
-        button.desktop {
+        a.desktop {
             @media (max-width: 404px) {
                 display: none;
             }
