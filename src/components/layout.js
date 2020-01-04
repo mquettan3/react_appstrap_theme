@@ -13,6 +13,7 @@ import Banner from "./banner"
 import Services from "./services"
 import AboutUs from "./aboutus"
 import ContactUs from "./contactUs"
+import SEO from "./seo"
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO />
       <Navbar isMenuIconClicked={isMenuIconClicked} setMenuIconClicked={setMenuIconClicked} handleNavMenuItemClick={handleNavMenuItemClick} />
       <Banner handleNavMenuItemClick={handleNavMenuItemClick} />
       <Services />
