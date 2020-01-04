@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (max-width: 1450px) {
+        background-attachment: scroll;
+    }
+
     small {
         display: block;
         color: rgb(219, 33, 33);
