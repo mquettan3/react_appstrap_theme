@@ -138,7 +138,7 @@ export default function ContactForm() {
                 <Icon className="left" icon={exclamationCircle}></Icon>There was a problem validating the form please check!
             </h5>}
             {(componentState === componentStates.ERROR) && <h5 className="errorContent">
-                <Icon className="left" icon={exclamationCircle}></Icon>There was an error sending your email.  Please validate that you have provided a valid email.  If this problem persists, please email me directly at mquettan@gmail.com!
+                <Icon className="left" icon={exclamationCircle}></Icon>There was an error sending your email.  Please validate that you have provided a valid email.  If this problem persists, please email us directly at lektrkman28@gmail.com!
             </h5>}
         </section>
     )

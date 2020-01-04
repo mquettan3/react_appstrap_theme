@@ -3,7 +3,7 @@ import ContactForm from "./contactForm";
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import { phone, envelope, mapMarker } from 'react-icons-kit/fa';
+import { phone, mobilePhone, envelope, mapMarker } from 'react-icons-kit/fa';
 
 export default function contactUs() {
     return (
@@ -11,8 +11,9 @@ export default function contactUs() {
             <div className="container">
                 <div className="info">
                     <h3>Contact Us</h3>
-                    <p><Icon size={24} icon={phone}></Icon><a href="tel:703-335-0654">703-335-0654</a></p>
-                    <p><Icon size={24} icon={envelope}></Icon><a href="mailto:someone@kanddelectric.com">someone@kanddelectric.com</a></p>
+                    <p><Icon size={24} icon={phone}></Icon>Business: <a href="tel:703-335-0654">(703)-335-0654</a></p>
+                    <p><Icon size={24} icon={mobilePhone}></Icon>Direct: <a href="tel:703-499-0522">(703)-499-0522</a></p>
+                    <p><Icon size={24} icon={envelope}></Icon><a href="mailto:lektrkman28@gmail.com">lektrkman28@gmail.com</a></p>
                     <p><Icon size={24} icon={mapMarker}></Icon>Bristow, VA</p>
                     <div className="section-divider"></div>
                     <p>When was the last time that your Bristow, VA, electrician actually showed up on time and did the job properly the first time? If you need some electrical work completed in a timely manner, then give us a call today! K & D Electric Company LLC is the only name you need to know in the electrical business.</p>
