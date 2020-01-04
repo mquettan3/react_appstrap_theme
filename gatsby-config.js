@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `K&D Electric`,
+    description: `K&D Electric is a local family owned and operated company residing in Northern Virginia. We are devoted to tending to your every electrical need! We install or repair existing work in both the residential and commercial fields. When you choose K&D Electric to work on your project, we finish when you’re happy!`,
+    author: `@lektrkman`,
   },
   plugins: [
     `gatsby-plugin-sass`,
