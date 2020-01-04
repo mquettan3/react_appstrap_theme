@@ -15,13 +15,6 @@ export default function useEventListener(eventName, handler, element = null){
   
     useEffect(
       () => {
-        if (element === null) {
-            if (typeof window !== 'undefined') {
-                element = window;
-            } else {
-                return;
-            }
-        }
         // Make sure element supports addEventListener
         // On 
         const isSupported = element && element.addEventListener;

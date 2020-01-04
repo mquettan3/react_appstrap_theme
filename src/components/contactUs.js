@@ -21,41 +21,45 @@ export default function contactUs() {
                 <div className="hours">
                     <h3>Business Hours</h3>
                     <table>
-                        <tr>
-                            <th><h4>Day</h4></th>
-                            <th><h4>Hours</h4></th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>7:30AM to 4:00PM</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>7:30AM to 4:00PM</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>7:30AM to 4:00PM</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>7:30AM to 4:00PM</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>7:30AM to 4:00PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>By Appointment</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>By Appointment</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th><h4>Day</h4></th>
+                                <th><h4>Hours</h4></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>7:30AM to 4:00PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>7:30AM to 4:00PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>7:30AM to 4:00PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>7:30AM to 4:00PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>7:30AM to 4:00PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>By Appointment</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>By Appointment</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
-                <div className="form">
+                <div id="form-request" className="form">
                     <h3>Request a Free Consultation!</h3>
                     <ContactForm />
                 </div>

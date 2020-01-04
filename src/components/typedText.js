@@ -15,7 +15,7 @@ export default function TypedText( { textValues }) {
            }
        }, 75);
        return () => clearInterval(interval);
-   }, [writingIndex, writingLength]);
+   }, [writingIndex, writingLength, textValues]);
 
    useEffect(() => {
        const interval = setInterval(() => {

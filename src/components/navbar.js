@@ -6,12 +6,13 @@ import useEventListener from "../hooks/eventListener";
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import { caretDown, home, bars, mapMarker } from 'react-icons-kit/fa';
+// import { caretDown, home, bars, mapMarker } from 'react-icons-kit/fa';
+import { home, bars, mapMarker } from 'react-icons-kit/fa';
 
 import "../assets/styles/main.scss"
 
 export default function Header( { isMenuIconClicked, setMenuIconClicked, handleNavMenuItemClick }) {
-  const [isServicesClicked, setServicesClicked] = useState(false);
+  // const [isServicesClicked, setServicesClicked] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   
@@ -42,7 +43,7 @@ export default function Header( { isMenuIconClicked, setMenuIconClicked, handleN
         <div className="title"><a href="#home" onClick={handleNavMenuItemClick}><h1>K&D Electric Company</h1></a><div className="divider"></div><a href="tel:703-335-0654" className="subtitle">703-335-0654</a></div>
         <a className="location-title" href="#location" onClick={handleNavMenuItemClick}><Icon size={30} icon={mapMarker}></Icon><h2>Bristow, Virginia</h2></a>
         <div>
-          <a role="button" tabIndex="0" className="nav-menu-icon" onClick={() => setMenuIconClicked(!isMenuIconClicked)} onKeyPress={() => setMenuIconClicked(!isMenuIconClicked)}><Icon size={26} icon={bars}></Icon></a>
+          <button tabIndex="0" className="nav-menu-icon" onClick={() => setMenuIconClicked(!isMenuIconClicked)} onKeyPress={() => setMenuIconClicked(!isMenuIconClicked)}><Icon size={26} icon={bars}></Icon></button>
           <ul className={"nav-menu " + (isMenuIconClicked ? "show" : "")}>
             <li><a href="#home" onClick={handleNavMenuItemClick}><Icon size={26} icon={home}></Icon></a></li>
             <li>
