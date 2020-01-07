@@ -2,10 +2,10 @@
     position: relative;
     width: 100%;
     overflow-x: scroll;
-    // scroll-snap-type: x proximity;
-    background-size: cover;
-    background-attachment: cover;
-    background-position: 50% 50%;
+    // background-size: cover;
+    // background-attachment: cover;
+    // background-position: 50% 50%;
+    background-color: $accent-color;
 
     .slider {
         display: flex;
@@ -18,16 +18,20 @@
             flex-shrink: 0;
             width: 60vw;
             text-align: center;
-            // scroll-snap-align: start;
+            scroll-snap-align: start;
             padding: 74px 20vw;
             z-index: 2;
 
             p {
                 color: white;
+                font-style: italic;
+                font-size: 24px;
+                margin-bottom: 20px;
             }
 
             i {
                 color: white;
+                font-size: 24px;
             }
         }
     }
@@ -39,13 +43,17 @@
     background: transparent;
 }
 
-.slider::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    width: 300vw;
-    content: '';
-    background-color: rgba(24, 24, 24, 0.7);
+.testimonials.scroll-lock {
+    scroll-snap-type: x mandatory;
 }
+
+// .slider::before {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     height: 100%;
+//     width: 300vw;
+//     content: '';
+//     background-color: rgba(24, 24, 24, 0.7);
+// }
