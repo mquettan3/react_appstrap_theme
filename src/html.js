@@ -11,6 +11,9 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script src="/plugins/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/plugins/owl-carousel/owl.carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="/plugins/owl-carousel/owl.theme.default.css" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
