@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
               <p>Website developed by <a href="https://www.marcusquettan.com">Marcus Quettan</a> | Copyright © K & D Electric Company LLC. All rights reserved.</p>
               <a href="https://www.linkedin.com">Careers</a>
           </div>
-      </section>
+      </section>      
     </>
   )
 }

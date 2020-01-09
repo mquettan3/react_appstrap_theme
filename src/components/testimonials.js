@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React from 'react'
 
 // Assets
-import BackgroundImage from "../assets/images/homePhoto.jpg";
+// import BackgroundImage from "../assets/images/homePhoto.jpg";
 
 // Loadable Components
 import Loadable from '@loadable/component';
