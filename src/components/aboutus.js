@@ -1,9 +1,9 @@
 import React from 'react'
 
 import BackgroundImage from "../assets/images/multimeter.jpg";
-import asyncScriptLoader from 'async-script-loader'
+// import asyncScriptLoader from 'async-script-loader'
  
-asyncScriptLoader('https://www.yelp.com/embed/widgets.js')
+// asyncScriptLoader('https://www.yelp.com/embed/widgets.js')
 
 export default function AboutUs() {
     return (
@@ -23,7 +23,8 @@ export default function AboutUs() {
                 <h3>Free Estimates & Consultations</h3>
                 <p>We are available from 7:30am - 4:00pm during the week, so why not stop by and see what we are all about? If you give K & D Electric Company LLC a call today, you will be able to get a free consultation from a professional Bristow, VA, electrical contractor.</p>
                 <a href="https://www.angieslist.com/companylist/us/va/bristow/k-d-electric-reviews-430228.aspx?cid=ssabadge" target="_new"><img src="https://www.angieslist.com/webbadge/b9e01fe7a1839fb8c154cf0d56e4ddbc.png" alt="WASHINGTON D.C. electrician" style={{border: 0}} /></a>
-                <span class="yelp-review" data-review-id="nlvBzr65ybswOP5vkBppyA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=TeRA6wtCuYPbHU4q0qkvSw" rel="nofollow noopener">Dianne R.</a>'s <a href="https://www.yelp.com/biz/k-and-d-electric-bristow?hrid=nlvBzr65ybswOP5vkBppyA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/49oyVz4EZNHrqAsfUu91Nw" rel="nofollow noopener">K & D Electric</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+                {/* <span class="yelp-review" data-review-id="nlvBzr65ybswOP5vkBppyA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=TeRA6wtCuYPbHU4q0qkvSw" rel="nofollow noopener">Dianne R.</a>'s <a href="https://www.yelp.com/biz/k-and-d-electric-bristow?hrid=nlvBzr65ybswOP5vkBppyA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/49oyVz4EZNHrqAsfUu91Nw" rel="nofollow noopener">K & D Electric</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span> */}
+                <iframe data-review-id="nlvBzr65ybswOP5vkBppyA" className="yelp-review" src="https://www.yelp.com/embed/review/nlvBzr65ybswOP5vkBppyA?embed_location=192.168.56.102:8000" scrolling="no" style={{display: "block", maxWidth: "700px", minWidth: "200px", width: "100%", height: "337px", border: "0px"}}></iframe>
             </div>
         </section>
     )
