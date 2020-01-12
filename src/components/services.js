@@ -4,7 +4,7 @@ import React from 'react'
 import { Icon } from 'react-icons-kit';
 import { building, home, wrench, dollar } from 'react-icons-kit/fa';
 
-export default function Services() {
+export default function Services() {    
     return (
         <>
         <section id="services" className="services">
@@ -47,6 +47,23 @@ export default function Services() {
                         <p>We are available from 7:30am - 4:00pm during the week, so why not stop by and see what we are all about? If you give K & D Electric Company LLC a call today, you will be able to get a free consultation from a professional Bristow, VA, electrical contractor.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        
+        <section className="list">
+            <div className="container">
+                <ul>
+                    <li>"Commercial Electrical Wiring"</li>
+                    <li>"Commercial Electrician"</li>
+                    <li>"Commercial Exterior Lighting"</li>
+                    <li>"General Electrician"</li>
+                    <li>"Home Electrical Wiring"</li>
+                    <li>"Home Electrician"</li>
+                    <li>"Home Exterior Lighting"</li>
+                    <li>"Recessed Lighting"</li>
+                    <li>"Electrical Wiring"</li>
+                    <li>"Circuit Breaker Replacement"</li>
+                </ul>
             </div>
         </section>
         </>

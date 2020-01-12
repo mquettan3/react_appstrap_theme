@@ -5,7 +5,7 @@
 
     a {
         text-decoration: none;
-        color: $accent-color;
+        color: $dark-accent-color;
     }
 
     a:hover {
@@ -97,6 +97,7 @@
             .section-divider {
                 margin-top: 20px;
                 margin-bottom: 20px;
+                background-color: $dark-accent-color;
             }
         }
     }
