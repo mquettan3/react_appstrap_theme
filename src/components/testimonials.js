@@ -30,19 +30,19 @@ export default function Testimonials() {
             >
                 <div className="item">
                     <div className="testimonial text-center max-width-700">
-                        <p>This is the second time I’ve used the company – just a great outfit.  Friendly yet business like.  Got down to business, talked to me about various options, and didn’t pressure.  Even had the rare equipment in the truck I wanted at the last second.  (Whole house surge protector.) I have used them times now – they are my go to Electrician for all my household needs.  Strongly recommend.</p>
+                        <p>I have used them times now – they are my go to Electrician for all my household needs. Strongly recommend! Friendly, yet professional!</p>
                         <i> - Adele M.</i>
                     </div>
                 </div>
                 <div className="item">
                     <div className="testimonial text-center max-width-700">
-                        <p>Ken is incredibly accessible and responsive and clearly takes pride in his company and his work.  These are the kinds of companies that I enjoy giving business to and there is only one place I will be calling in the future for electrical work, and that is K&D Electric.</p>
+                        <p>Ken is incredibly accessible and responsive and clearly takes pride in his company and his work.  These are the kinds of companies that I enjoy giving business to!</p>
                         <i>Kevin M.</i>
                     </div>
                 </div>
                 <div className="item">
                     <div className="testimonial text-center max-width-700">
-                        <p>We were very pleased with the work you performed and will highly recommend your company.</p>
+                        <p>We were very pleased with the work performed and we highly recommend your company!</p>
                         <i> - Crystal</i>
                     </div>
                 </div>

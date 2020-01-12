@@ -11,11 +11,14 @@ import PropTypes from "prop-types"
 import Navbar from "./navbar"
 import Banner from "./banner"
 import Services from "./services"
-import AboutUs from "./aboutus"
 import Testimonials from "./testimonials"
 import ContactUs from "./contactUs"
 import SEO from "./seo"
 // import "./layout.css"
+
+// Loadable Components
+import Loadable from '@loadable/component';
+const AboutUs = Loadable(() => import('./aboutus'));
 
 const Layout = ({ children }) => {
   const [isMenuIconClicked, setMenuIconClicked] = useState(false);
