@@ -1,41 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import BackgroundImage1 from "../assets/images/Chandelier.png";
 import BackgroundImage2 from "../assets/images/StoneWall.jpg";
+import BackgroundImage3 from "../assets/images/homePhoto.jpg";
 import TypedText from "./typedText";
 
 export default function Banner( { handleNavMenuItemClick }) {
-    const [backgroundIndex, setBackgroundIndex] = useState(0);
-    const [showToggle, setShowToggle] = useState(false);
-    const backgroundImageList = [BackgroundImage1, BackgroundImage2];
-    const backgroundImage1 = backgroundImageList[0];
-    let backgroundImage2 = backgroundImageList[backgroundImageList.length - 1];
+    const [animated, setAnimated] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [previousImageIndex, setPreviousImageIndex] = useState(0);
+    const visibleSlide = useRef(null);
+    const images = [BackgroundImage1, BackgroundImage2, BackgroundImage3];
 
-    if((backgroundIndex - 1) < 0) {
-        backgroundImage2 = backgroundImageList[backgroundImageList.length - 1];
-    } else {
-        backgroundImage2 = backgroundImageList[backgroundIndex - 1];
-    }
-    
     useEffect(() => {
-        setShowToggle(!showToggle);
-        const interval = setInterval(() => {
-            if (backgroundIndex < (backgroundImageList.length - 1)) {
-                setBackgroundIndex(backgroundIndex + 1);
-            } else {
-                setBackgroundIndex(0);
-            }
-        }, 3000);
+        let timer = setInterval(triggerAnimationStart, 8000);
 
-        return () => clearInterval(interval);
+        return(() => {
+            clearInterval(timer);
+        })
 
-    }, [backgroundIndex]);
+    }, []);
 
+    useEffect(() => {
+        visibleSlide.current.addEventListener("animationend", handleAnimationEnd);
+        visibleSlide.current.addEventListener("animationstart", handleAnimationStart);
+
+        return(() => {
+            visibleSlide.current.removeEventListener("animationend", handleAnimationEnd);
+            visibleSlide.current.removeEventListener("animationstart", handleAnimationStart);
+        })
+
+    }, [currentImageIndex, previousImageIndex, animated]);
+
+    const handleAnimationStart = () => {
+        if ((currentImageIndex + 1) === images.length) {
+            setCurrentImageIndex(0);
+        } else {
+            setCurrentImageIndex(currentImageIndex + 1);
+        }
+    }
+
+    const handleAnimationEnd = () => {
+        setAnimated(false);
+        setPreviousImageIndex(currentImageIndex);
+    }
+
+    const triggerAnimationStart = () => {
+        console.log("animation started!");
+        setAnimated(true);
+    }
 
     return (
         <section id="home" className="banner">
-            <div className={"banner-image-1 " + (showToggle ? "show" : "")} style={{backgroundImage: "url(" + backgroundImage1  + ")"}}></div>
-            <div className={"banner-image-2 " + (!showToggle ? "show" : "")}  style={{backgroundImage: "url(" + backgroundImage2  + ")"}}></div>
+            <div className="previous-slide" style={{backgroundImage: "url(" + images[previousImageIndex]  + ")"}}></div>
+            <div ref={visibleSlide} className={"current-slide" + (animated ? " animated" : "")}  style={{backgroundImage: "url(" + images[currentImageIndex]  + ")"}}></div>
+            <div className="banner-overlay"></div>
             <div className="overlay">
                 <h1 className="desktop-title">Experienced Local Electricians</h1>
                 <h1 className="mobile-title">K&D Electric Company</h1>
