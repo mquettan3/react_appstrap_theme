@@ -19,6 +19,18 @@ export default function Services() {
         
         <section className="content">
             <div className="container">
+                <ul>
+                    <li>Commercial Electrical Wiring</li>
+                    <li>Commercial Electrician</li>
+                    <li>Commercial Exterior Lighting</li>
+                    <li>General Electrician</li>
+                    <li>Home Electrical Wiring</li>
+                    <li>Home Electrician</li>
+                    <li>Home Exterior Lighting</li>
+                    <li>Recessed Lighting</li>
+                    <li>Electrical Wiring</li>
+                    <li>Circuit Breaker Replacement</li>
+                </ul>
                 <div className="item-wrapper">
                     <div className="item">
                         <Icon size={48} icon={building}></Icon>
@@ -52,18 +64,6 @@ export default function Services() {
         
         <section className="list">
             <div className="container">
-                <ul>
-                    <li>"Commercial Electrical Wiring"</li>
-                    <li>"Commercial Electrician"</li>
-                    <li>"Commercial Exterior Lighting"</li>
-                    <li>"General Electrician"</li>
-                    <li>"Home Electrical Wiring"</li>
-                    <li>"Home Electrician"</li>
-                    <li>"Home Exterior Lighting"</li>
-                    <li>"Recessed Lighting"</li>
-                    <li>"Electrical Wiring"</li>
-                    <li>"Circuit Breaker Replacement"</li>
-                </ul>
             </div>
         </section>
         </>

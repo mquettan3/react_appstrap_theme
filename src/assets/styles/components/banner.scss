@@ -30,7 +30,7 @@
         opacity: 1;
     }
 
-    .current-slide.animated {
+    .current-slide.animated, .previous-slide.animated {
         animation-name: zoomin;
         animation-duration: 3s;
         animation-iteration-count: 1;

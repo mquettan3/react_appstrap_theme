@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BackgroundImage from "../assets/images/Chandelier.jpg";
+import BackgroundImage from "../assets/images/Chandelier.png";
 // import asyncScriptLoader from 'async-script-loader'
  
 // asyncScriptLoader('https://www.yelp.com/embed/widgets.js')
